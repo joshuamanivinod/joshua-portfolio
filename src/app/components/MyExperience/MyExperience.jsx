@@ -19,7 +19,7 @@ const TimelineItem = ({ title, subtitle, description, date }) => (
 const MyExperience = () => {
   return (
     <section id="experience">
-      <div className="bg-[#1F1E1B] flex flex-col justify-center items-center font-Inconsolata gap-9 py-44">
+      <div className="bg-[#1F1E1B] flex flex-col justify-center items-center font-Inconsolata gap-9 py-44 px-5">
         <h1 className="text-[#FF8303] text-3xl font-semibold">My Experience</h1>
         <div className="w-full md:w-2/3">
           <TimelineItem

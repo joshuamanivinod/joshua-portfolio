@@ -30,6 +30,26 @@ export const skills = [
     title: "Firebase",
     img: "/firebase.png",
   },
+  {
+    id: "7",
+    title: "Python",
+    img: "/python.png",
+  },
+  {
+    id: "8",
+    title: "Cpp",
+    img: "/cpp.png",
+  },
+  {
+    id: "9",
+    title: "PostgreSQL",
+    img: "/postgresql.png",
+  },
+  {
+    id: "10",
+    title: "Expressjs",
+    img: "/expressjs.png",
+  },
 
   // {
   //   id: "1",
