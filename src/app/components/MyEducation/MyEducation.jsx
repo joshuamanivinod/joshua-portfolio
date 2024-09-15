@@ -26,7 +26,7 @@ const MyEducation = () => {
             title="National Institute of Technology, Calicut"
             subtitle="BTech in Electronics and Communication Engineering"
             description="CGPA: 8.40"
-            date="2021 - 2024"
+            date="2021 - 2025"
           />
           <TimelineItem
             title="Navy Children School, Kochi"
