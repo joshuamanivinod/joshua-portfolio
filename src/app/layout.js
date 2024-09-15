@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "LiveWithCodeAnkit",
-  description: "Developed By  Ankit",
+  title: "joshua-portfolio",
+  description: "joshua's portfolio website",
 };
 
 export default function RootLayout({ children }) {

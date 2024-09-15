@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import BasketballAnimation from "./_components/BasketballAnimation";
 
 const Home = () => {
   return (
@@ -47,7 +48,8 @@ const Home = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-center text-lg items-center gap-3 text-[#F0E3CA] flex-wrap p-4">
             <div className="relative w-48 h-48">
-              <Image src="/home1.png" alt="home icon not found" fill />
+              {/* <Image src="/home1.png" alt="home icon not found" fill /> */}
+              <BasketballAnimation/>
             </div>
             <div className="lg:w-1/2 text-center lg:text-start">
               <p>
