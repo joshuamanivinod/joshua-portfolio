@@ -11,17 +11,17 @@ const MySkills = () => {
             <h1 className="text-[#FF8303] text-3xl font-semibold">My Skills</h1>
           </div>
           <div>
-            <div className="flex flex-wrap justify-center items-center gap-5 p-2">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-5 p-2">
               {skills.map((item) => (
                 <div
-                  className="flex flex-col justify-center items-center gap-3 font-Lato bg-[#21201D] p-12 rounded-lg hover:scale-105"
+                  className="flex flex-col justify-center items-center gap-3 font-Lato bg-[#21201D] p-6 rounded-lg hover:scale-105"
                   key={item.id}
                 >
                   <div className="relative w-10 h-10 md:w-20 md:h-20">
                     <Image src={item.img} fill alt="Image Not Found" />
                   </div>
 
-                  <label className="text-xl lg:text-3xl text-white">
+                  <label className="text-xl lg:text-2xl text-white">
                     {item.title}
                   </label>
                 </div>
