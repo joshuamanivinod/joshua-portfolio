@@ -3,12 +3,13 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+
 const Home = () => {
   return (
     <>
       <section id="about">
-        <div className="bg-[#1F1E1B] font-Inconsolata flex  flex-col-reverse lg:flex-col justify-center items-center py-40 gap-14">
-          <div className="flex flex-col lg:flex-row justify-center items-center  gap-32">
+        <div className="bg-[#1F1E1B] font-Inconsolata flex flex-col-reverse lg:flex-col justify-center items-center py-40 gap-14">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-32">
             <div className="flex flex-col lg:items-start justify-center items-center gap-2 p-5">
               <h1 className="text-[#FF8303] text-6xl font-bold">
                 Joshua Mani Vinod
@@ -38,8 +39,7 @@ const Home = () => {
               </span> */}
             </div>
             <div className="relative w-96 h-96 bg-cover">
-              <Image src="/homepic2.png" fill alt={"Np Image Found"} />
-
+              <Image src="/homepic2.png" fill alt={"No Image Found"} />
               <div className="w-40 h-40 absolute left-24 top-32">
                 <Image src="/pp.png" fill alt={"No Image Found"} />
               </div>
@@ -52,11 +52,11 @@ const Home = () => {
             <div className="lg:w-1/2 text-center lg:text-start">
               <p>
                 👋 Hi there! I'm Joshua Mani Vinod, a final year student at NIT Calicut majoring in Electronics and Communication Engineering. <br/>
-                {/* 🤖 I'm deeply passionate about AI/ML and am keen in leveraging my knowledge about machine learning algorithms into creating impactful projects.<br/>
-                🧑‍💻 I'm a skilled web developer having a good knowledge in MERN stack and other upcoming technologies.<br/>
-                🔢 I have good knowledge on Data Structures and Algorithms in C++ and have solved a good number of problems on leetcode and other platforms.<br/>
-                🏀 I've always loved playing sports and have had the opportunity to play professional basketball for my college team.<br/>
-                🤝I'm excited to build new connections and explore new opportunities on the way.<br/> */}
+                {/* 🤖 I'm deeply passionate about AI/ML and am keen on leveraging my knowledge of machine learning algorithms to create impactful projects.<br/>
+                🧑‍💻 I'm a skilled web developer with a solid understanding of the MERN stack and other emerging technologies.<br/>
+                🔢 I have a strong background in Data Structures and Algorithms in C++ and have solved numerous problems on LeetCode and other platforms.<br/>
+                🏀 I've always loved playing sports and had the opportunity to play professional basketball for my college team.<br/>
+                🤝 I'm excited to build new connections and explore new opportunities along the way.<br/> */}
               </p>
             </div>
           </div>
