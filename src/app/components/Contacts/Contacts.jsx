@@ -11,7 +11,7 @@ const Contacts = () => {
               <span className="text-[#FF8303]">&lt;/J</span>oshua
               <span className="text-[#FF8303]">&gt;</span>
             </h1>
-            <p className="text-[#F0E3CA] text-xl w-[70%]">
+            <p className="text-[#F0E3CA] text-xl md:w-[70%]">
               If you liked my work and you need me, I&apos;m ready to talk to
               you.
             </p>

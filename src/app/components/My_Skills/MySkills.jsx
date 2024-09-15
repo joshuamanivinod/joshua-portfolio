@@ -17,7 +17,7 @@ const MySkills = () => {
                   className="flex flex-col justify-center items-center gap-3 font-Lato bg-[#21201D] p-12 rounded-lg hover:scale-105"
                   key={item.id}
                 >
-                  <div className="relative w-20 h-20">
+                  <div className="relative w-10 h-10 md:w-20 md:h-20">
                     <Image src={item.img} fill alt="Image Not Found" />
                   </div>
 

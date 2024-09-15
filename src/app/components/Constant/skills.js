@@ -42,12 +42,12 @@ export const skills = [
   },
   {
     id: "9",
-    title: "PostgreSQL",
+    title: "Postgres",
     img: "/postgresql.png",
   },
   {
     id: "10",
-    title: "Expressjs",
+    title: "Express",
     img: "/expressjs.png",
   },
 
