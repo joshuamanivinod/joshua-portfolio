@@ -15,9 +15,6 @@ const Home = () => {
               <h1 className="text-[#FF8303] text-6xl font-bold">
                 Joshua Mani Vinod
               </h1>
-              {/* <label className="text-[#F0E3CA] text-3xl">
-                MERN Developer
-              </label> */}
               <TypeAnimation
                 className="text-[#F0E3CA] text-3xl"
                 sequence={[
@@ -27,17 +24,11 @@ const Home = () => {
                   1000,
                   "AI/ML Enthusiast",
                   1000,
-                  // "UI/UX Designer",
-                  // 1000,
                 ]}
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
               />
-              {/* <span className="text-[#F0E3CA] text-lg text-center lg:text-start">
-                MERN developer looking for ideas and projects for himself and
-                others
-              </span> */}
             </div>
             <div className="relative w-96 h-96 bg-cover">
               <Image src="/homepic2.png" fill alt={"No Image Found"} />
@@ -48,18 +39,23 @@ const Home = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-center text-lg items-center gap-3 text-[#F0E3CA] flex-wrap p-4">
             <div className="relative w-48 h-48">
-              {/* <Image src="/home1.png" alt="home icon not found" fill /> */}
-              <BasketballAnimation/>
+              <BasketballAnimation />
             </div>
             <div className="lg:w-1/2 text-center lg:text-start">
               <p>
                 👋 Hi there! I'm Joshua Mani Vinod, a final year student at NIT Calicut majoring in Electronics and Communication Engineering. <br/>
-                {/* 🤖 I'm deeply passionate about AI/ML and am keen on leveraging my knowledge of machine learning algorithms to create impactful projects.<br/>
-                🧑‍💻 I'm a skilled web developer with a solid understanding of the MERN stack and other emerging technologies.<br/>
-                🔢 I have a strong background in Data Structures and Algorithms in C++ and have solved numerous problems on LeetCode and other platforms.<br/>
-                🏀 I've always loved playing sports and had the opportunity to play professional basketball for my college team.<br/>
-                🤝 I'm excited to build new connections and explore new opportunities along the way.<br/> */}
               </p>
+              {/* Download Resume Section */}
+              <div className="mt-5">
+                <a
+                  href="/resume.pdf"
+                  download="Joshua_Mani_Vinod_Resume.pdf"
+                  // className="bg-[#FF8303] text-white px-5 py-2 rounded-md text-lg font-medium hover:bg-[#FF9B3F] transition"
+                  className="text-[#FF8303] border-2 border-[#FF8303] px-4 py-2 rounded-lg text-lg font-medium hover:bg-[#FF8303] hover:text-[#1F1E1B] hover:font-extrabold transition-all duration-300 ease-in-out shadow-md hover:shadow-lg transform hover:scale-105"
+                >
+                  Download Resume
+                </a>
+              </div>
             </div>
           </div>
         </div>

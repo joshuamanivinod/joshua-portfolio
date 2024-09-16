@@ -3,12 +3,14 @@ import { useState } from "react";
 import { menuList } from "../Constant/menuList";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
   return (
     <>
-      <div className="bg-[#1F1E1B] z-20 flex justify-around items-center gap-20  lg:gap-5 p-4 font-Inconsolata font-bold text-white sticky top-0 opacity-90">
+      <div className="bg-[#1F1E1B] z-20 flex justify-around items-center gap-20 lg:gap-5 p-4 font-Inconsolata font-bold text-white sticky top-0 opacity-90">
         <h1 className="text-2xl lg:text-4xl text-[#F0E3CA] font-bold">
           <span className="text-[#FF8303]">&lt;/J</span>oshua
           <span className="text-[#FF8303]">&gt;</span>
@@ -46,41 +48,54 @@ const Navbar = () => {
               </div>
               <ul className="flex flex-col items-center justify-between min-h-[250px]">
                 {menuList.map((item) => (
-                  <li key={item.id} className="hover:text-[#FF8303] text-lg">
-                    <Link href={item.path}>{item.title}</Link>
+                  <li key={item.id} className="hover:text-[#FF8303] text-lg hover:cursor-pointer">
+                    <ScrollLink
+                      to={item.path.substring(1)} // remove leading # from path
+                      smooth={true}
+                      duration={20} // Adjust duration as needed
+                      onClick={() => setIsNavOpen(false)} // Close menu on click
+                    >
+                      {item.title}
+                    </ScrollLink>
                   </li>
                 ))}
               </ul>
             </div>
           </section>
-          <ul className=" items-center justify-around gap-10 DESKTOP-MENU hidden  lg:flex">
+          <ul className="items-center justify-around gap-10 DESKTOP-MENU hidden lg:flex">
             {menuList.map((item) => (
-              <li key={item.id} className="hover:text-[#FF8303] text-lg">
-                <Link href={item.path}>{item.title}</Link>
+              <li key={item.id} className="hover:text-[#FF8303] text-lg hover:cursor-pointer">
+                <ScrollLink
+                  to={item.path.substring(1)} // remove leading # from path
+                  smooth={true}
+                  duration={20} // Adjust duration as needed
+                >
+                  {item.title}
+                </ScrollLink>
               </li>
             ))}
           </ul>
         </nav>
         <style>{`
-      .hideMenuNav {
-        display: none;
-      }
-      .showMenuNav {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        opacity: 1;
-        background:#1F1E1B;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-      }
-    `}</style>
+          .hideMenuNav {
+            display: none;
+          }
+          .showMenuNav {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            background:#1F1E1B;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+          }
+        `}</style>
       </div>
     </>
   );

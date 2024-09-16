@@ -1,13 +1,14 @@
 export const menuList = [
   {
-    id: "2",
+    id: "1",
     title: "About Me",
     path: "#about",
   },
+
   {
-    id: "3",
-    title: "Skills",
-    path: "#skills",
+    id: "2",
+    title: "Experience",
+    path: "#experience",
   },
   {
     id: "3",
@@ -15,12 +16,12 @@ export const menuList = [
     path: "#education",
   },
   {
-    id: "3",
-    title: "Experience",
-    path: "#experience",
+    id: "4",
+    title: "Skills",
+    path: "#skills",
   },
   {
-    id: "4",
+    id: "5",
     title: "Projects",
     path: "#services",
   },
