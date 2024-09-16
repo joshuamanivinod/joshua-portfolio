@@ -5,15 +5,14 @@ const Contacts = () => {
   return (
     <>
       <section id="contact">
-        <div className="bg-[#1F1E1B] flex flex-col  xl:flex-row justify-center p-20 gap-5 font-Inconsolata ">
-          <div className="flex flex-col  gap-4 p-6">
+        <div className="bg-[#1F1E1B] flex flex-col  xl:flex-row justify-center pl-20 pb-20 md:p-20 gap-5 font-Inconsolata ">
+          <div className="flex flex-col  gap-4 md:p-6">
             <h1 className="text-3xl text-[#F0E3CA]">
               <span className="text-[#FF8303]">&lt;/J</span>oshua
               <span className="text-[#FF8303]">&gt;</span>
             </h1>
             <p className="text-[#F0E3CA] text-xl md:w-[70%]">
-              If you liked my work and you need me, I&apos;m ready to talk to
-              you.
+              I'm excited to build new connections and explore new opportunities on the way.
             </p>
           </div>
           <div className="flex flex-col  items-start gap-5  flex-wrap">
