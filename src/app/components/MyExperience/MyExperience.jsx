@@ -26,7 +26,7 @@ const TimelineItem = ({ title, subtitle, description, date }) => {
     <div
       ref={ref}
       className={`relative flex flex-col items-start md:items-center mb-12 transition-transform duration-1000 ${
-        isVisible ? "translate-x-0 opacity-100" : "-translate-x-80 opacity-0"
+        isVisible ? "translate-x-0 opacity-100" : "-translate-x-56 md:-translate-x-96 opacity-0"
       }`}
     >
       <div className="absolute -left-4 w-2 h-2 rounded-full bg-[#FF8303]"></div>
