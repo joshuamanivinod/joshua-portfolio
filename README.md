@@ -25,12 +25,8 @@ This Git repository contains a Next.js project for building a  portfolio templat
 5. Test your changes locally using `npm run dev`.
 6. Deploy your personal portfolio to your preferred hosting platform.
 
-Please refer to the documentation provided in the repository for more detailed instructions and customization options.
-
 ## Contributions
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
