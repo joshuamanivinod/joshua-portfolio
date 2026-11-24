@@ -53,6 +53,7 @@ const Navbar = () => {
                       to={item.path.substring(1)} // remove leading # from path
                       smooth={true}
                       duration={20} // Adjust duration as needed
+                      offset={-80} // Land sections below the sticky header
                       onClick={() => setIsNavOpen(false)} // Close menu on click
                     >
                       {item.title}
@@ -69,6 +70,7 @@ const Navbar = () => {
                   to={item.path.substring(1)} // remove leading # from path
                   smooth={true}
                   duration={20} // Adjust duration as needed
+                  offset={-80} // Land sections below the sticky header
                 >
                   {item.title}
                 </ScrollLink>

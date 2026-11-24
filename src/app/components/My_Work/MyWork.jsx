@@ -35,15 +35,17 @@ const MyWork = () => {
                         GITHUB
                       </button>
                     </a>
-                    <a
-                      href={project.links.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <button className="bg-[#32312E] hover:bg-[#4A4946] py-1 px-2 rounded-md text-white hover:font-bold hover:cursor-pointer">
-                        WEBSITE
-                      </button>
-                    </a>
+                    {project.links.website && (
+                      <a
+                        href={project.links.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button className="bg-[#32312E] hover:bg-[#4A4946] py-1 px-2 rounded-md text-white hover:font-bold hover:cursor-pointer">
+                          WEBSITE
+                        </button>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

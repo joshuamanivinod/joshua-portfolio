@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import BasketballAnimation from "./_components/BasketballAnimation";
+import DataGlobe from "./_components/DataGlobe";
 
 const Home = () => {
   return (
@@ -22,7 +22,7 @@ const Home = () => {
                   1000,
                   "Web Developer",
                   1000,
-                  "AI/ML Enthusiast",
+                  "AI & Data Engineer",
                   1000,
                 ]}
                 wrapper="span"
@@ -39,11 +39,11 @@ const Home = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-center text-lg items-center gap-3 text-[#F0E3CA] flex-wrap p-4">
             <div className="relative w-48 h-48">
-              <BasketballAnimation />
+              <DataGlobe />
             </div>
             <div className="lg:w-1/2 text-center lg:text-start">
               <p>
-                👋 Hi there! I'm Joshua Mani Vinod, a final year student at NIT Calicut majoring in Electronics and Communication Engineering. <br/>
+                👋 Hi there! I'm Joshua Mani Vinod, an AI and Data Engineer at Deloitte USI. I graduated from NIT Calicut in 2025 with a B.Tech in Electronics and Communication Engineering. <br/>
               </p>
               {/* Download Resume Section */}
               <div className="mt-5">

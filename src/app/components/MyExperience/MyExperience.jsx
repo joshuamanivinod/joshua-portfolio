@@ -51,10 +51,16 @@ const MyExperience = () => {
         <h1 className="text-[#FF8303] text-3xl font-semibold">My Experience</h1>
         <div className="w-full md:w-2/3">
           <TimelineItem
-            title="Centre of Excellence in Artificial Intelligence"
+            title="Deloitte USI"
+            subtitle="AI and Data Engineer"
+            description="Delivered multi-client data engineering solutions on Azure, GCP, and AWS. Built reverse- and forward-engineering tools that turn ETL pipelines (e.g., DBT, Sybase) into STTM documents and generate production-ready pipelines from them, using Claude Code plugins. Engineered an AI-powered test case generator (FastAPI, LangChain, Azure OpenAI, RAG) that automates 90% of manual test case creation, cutting test creation time by an estimated 70-80%."
+            date="July 2025 - Present"
+          />
+          <TimelineItem
+            title="Centre of Excellence in Artificial Intelligence, NIT Calicut"
             subtitle="Web Development Intern"
-            description="Worked on R&D Project 'SAMUDRA' for a Smart Decision Support System focused on disaster management."
-            date="Present"
+            description="Worked on the R&D project 'SAMUDRA' (sponsored by MoE, Govt of India), building a Smart Decision Support System dashboard for disaster management focused on crowd and flood monitoring. Presented the application to a panel at IIT Delhi and received positive feedback."
+            date="June 2024 - Sept 2024"
           />
           <TimelineItem
             title="Stanley Black & Decker, Inc."

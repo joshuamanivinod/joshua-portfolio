@@ -17,16 +17,21 @@ export const menuList = [
   },
   {
     id: "4",
+    title: "Certifications",
+    path: "#certifications",
+  },
+  {
+    id: "5",
     title: "Skills",
     path: "#skills",
   },
   {
-    id: "5",
+    id: "6",
     title: "Projects",
     path: "#services",
   },
   {
-    id: "6",
+    id: "7",
     title: "Contact",
     path: "#contact",
   },

@@ -1,6 +1,8 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import { certifications } from "../Constant/certifications";
 
 const TimelineItem = ({ title, subtitle, description, date }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,7 +55,7 @@ const MyEducation = () => {
           <TimelineItem
             title="National Institute of Technology, Calicut"
             subtitle="BTech in Electronics and Communication Engineering"
-            description="CGPA: 8.40"
+            description="CGPA: 8.38"
             date="2021 - 2025"
           />
           <TimelineItem
@@ -62,6 +64,28 @@ const MyEducation = () => {
             description="97.4% (A1 credit for all subjects)"
             date="2019 - 2021"
           />
+        </div>
+        <div id="certifications" className="w-full md:w-2/3">
+          <h2 className="text-[#FF8303] text-3xl font-semibold mb-6">Certifications</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {certifications.map((cert) => (
+              <a
+                key={cert.title}
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`View ${cert.title} credential`}
+                className="group flex items-start gap-4 rounded-lg border border-[#32312E] bg-[#21201D] p-5 transition-colors duration-300 hover:border-[#FF8303]"
+              >
+                <Image src={cert.logo} alt="" width={36} height={36} unoptimized className="h-9 w-9 shrink-0" />
+                <div className="flex min-w-0 flex-col">
+                  <h3 className="text-white text-base font-semibold leading-snug">{cert.title}</h3>
+                  <p className="mt-1 text-sm italic text-[#F0E3CA]">{cert.issuer}</p>
+                  <span className="mt-3 text-sm text-[#FF8303] group-hover:underline">View credential</span>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>

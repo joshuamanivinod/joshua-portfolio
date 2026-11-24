@@ -1,94 +1,33 @@
+// Logos live in public/skills/ as monochrome SVGs (cream #F0E3CA).
+// SQL and Kinde use generic icons because no brand logo was available.
 export const skills = [
-  {
-    id: "1",
-    title: "Next JS",
-    img: "/nextjs.png",
-  },
-  {
-    id: "2",
-    title: "Tailwind",
-    img: "/tailwind.png",
-  },
-  {
-    id: "3",
-    title: "Node JS",
-    img: "/nodejs.png",
-  },
-  
-  {
-    id: "4",
-    title: "Git",
-    img: "/git.png",
-  },
-  {
-    id: "5",
-    title: "React JS",
-    img: "/react.png",
-  },
-  {
-    id: "6",
-    title: "Firebase",
-    img: "/firebase.png",
-  },
-  {
-    id: "7",
-    title: "Python",
-    img: "/python.png",
-  },
-  {
-    id: "8",
-    title: "Cpp",
-    img: "/cpp.png",
-  },
-  {
-    id: "9",
-    title: "Postgres",
-    img: "/postgresql.png",
-  },
-  {
-    id: "10",
-    title: "Express",
-    img: "/expressjs.png",
-  },
-
-  // {
-  //   id: "1",
-  //   title: "HTML5",
-  //   img: "/html.png",
-  // },
-  // {
-  //   id: "2",
-  //   title: "CSS3",
-  //   img: "/css.png",
-  // },
-  // {
-  //   id: "3",
-  //   title: "JavaScript",
-  //   img: "/javascript.png",
-  // },
-  // {
-  //   id: "4",
-  //   title: "Tailwind",
-  //   img: "/tailwind.png",
-  // },
-  // {
-  //   id: "5",
-  //   title: "Git",
-  //   img: "/git.png",
-  // },
-  // {
-  //   id: "6",
-  //   title: "React JS",
-  //   img: "/react.png",
-  // },
-  // {
-  //   id: "7",
-  //   title: "Next JS",
-  //   img: "/nextjs.png",
-  // },
-  // {
-  //   id: "8",
-  //   title: "Node JS",
-  //   img: "/nodejs.png",
-  // },
+  { id: "nextjs", title: "Next.js", img: "/skills/nextjs.svg" },
+  { id: "nodejs", title: "Node.js", img: "/skills/nodejs.svg" },
+  { id: "git", title: "Git", img: "/skills/git.svg" },
+  { id: "react", title: "React.js", img: "/skills/react.svg" },
+  { id: "firebase", title: "Firebase", img: "/skills/firebase.svg" },
+  { id: "python", title: "Python", img: "/skills/python.svg" },
+  { id: "cpp", title: "C++", img: "/skills/cpp.svg" },
+  { id: "postgresql", title: "PostgreSQL", img: "/skills/postgresql.svg" },
+  { id: "express", title: "Express.js", img: "/skills/express.svg" },
+  { id: "javascript", title: "JavaScript", img: "/skills/javascript.svg" },
+  { id: "typescript", title: "TypeScript", img: "/skills/typescript.svg" },
+  { id: "sql", title: "SQL", img: "/skills/sql.svg" },
+  { id: "pyspark", title: "PySpark", img: "/skills/pyspark.svg" },
+  { id: "flask", title: "Flask", img: "/skills/flask.svg" },
+  { id: "langchain", title: "LangChain", img: "/skills/langchain.svg" },
+  { id: "mongodb", title: "MongoDB", img: "/skills/mongodb.svg" },
+  { id: "milvus", title: "Milvus Vector DB", img: "/skills/milvus.svg" },
+  { id: "azure", title: "Azure", img: "/skills/azure.svg" },
+  { id: "aws", title: "AWS", img: "/skills/aws.svg" },
+  { id: "gcp", title: "GCP", img: "/skills/gcp.svg" },
+  { id: "docker", title: "Docker", img: "/skills/docker.svg" },
+  { id: "postman", title: "Postman", img: "/skills/postman.svg" },
+  { id: "jupyter", title: "Jupyter Notebook", img: "/skills/jupyter.svg" },
+  { id: "databricks", title: "Databricks", img: "/skills/databricks.svg" },
+  { id: "linux", title: "Linux", img: "/skills/linux.svg" },
+  { id: "openai", title: "OpenAI", img: "/skills/openai.svg" },
+  { id: "claude", title: "Claude Code", img: "/skills/claude.svg" },
+  { id: "twilio", title: "Twilio API", img: "/skills/twilio.svg" },
+  { id: "kinde", title: "Kinde Authentication", img: "/skills/kinde.svg" },
 ];
